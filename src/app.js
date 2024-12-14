@@ -18,6 +18,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://localhost:4000/api",
+      "http://localhost",
 
       process.env.BASE_URL_BACKEND,
       process.env.BASE_URL_FRONTEND,
