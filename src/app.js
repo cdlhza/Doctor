@@ -15,7 +15,11 @@ const app = express();
 dotenv.config();
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:4000/api"],
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:4000/api",
+      process.env.BASE_URL,
+    ],
     credentials: true,
   })
 );
